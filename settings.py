@@ -2,10 +2,9 @@ from __future__ import absolute_import, unicode_literals
 
 import django
 from django.conf import settings
-from myapp import myapp_defaults
+#from myapp import myapp_defaults
 
-settings.configure(default_settings=myapp_defaults, DEBUG=True)
-django.setup()
+#settings.configure(default_settings=myapp_defaults, DEBUG=True)
 
 ######################
 # MEZZANINE SETTINGS #
@@ -368,3 +367,5 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
+
+django.setup()
