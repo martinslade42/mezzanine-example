@@ -3,12 +3,12 @@ from __future__ import absolute_import, unicode_literals
 
 import os
 import sys
+
 import django
-
 from django.conf import settings
-from myapp import myapp_defaults
-
-settings.configure(default_settings=myapp_defaults, DEBUG=True)
+#from myapp import myapp_defaults
+#settings.configure(default_settings=myapp_defaults, DEBUG=True)
+settings.configure()
 django.setup()
 
 # Corrects some pathing issues in various contexts, such as cron jobs,
