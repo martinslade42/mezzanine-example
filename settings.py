@@ -1,12 +1,5 @@
 from __future__ import absolute_import, unicode_literals
 
-import django
-from django.conf import settings
-#from myapp import myapp_defaults
-#settings.configure(default_settings=myapp_defaults, DEBUG=True)
-settings.configure(DEBUG=True)
-django.setup()
-
 ######################
 # MEZZANINE SETTINGS #
 ######################

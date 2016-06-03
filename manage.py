@@ -3,7 +3,13 @@ from __future__ import absolute_import, unicode_literals
 
 import os
 import sys
+import django
 
+from django.conf import settings
+from myapp import myapp_defaults
+
+settings.configure(default_settings=myapp_defaults, DEBUG=True)
+django.setup()
 
 # Corrects some pathing issues in various contexts, such as cron jobs,
 # and the project layout still being in Django 1.3 format.
